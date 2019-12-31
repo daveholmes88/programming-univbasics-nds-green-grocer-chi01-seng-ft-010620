@@ -20,14 +20,14 @@ def consolidate_cart(cart)
       new_item = {
         :item => cart[i][:item],
         :price => cart[i][:price],
-        :clearance => cart[i][:clearance]
+        :clearance => cart[i][:clearance],
         :count => 1
       }
       new_cart << new_item
     end
     i += 1
   end
-  new_cart 
+  new_cart
 end
 
 def apply_coupons(cart, coupons)
