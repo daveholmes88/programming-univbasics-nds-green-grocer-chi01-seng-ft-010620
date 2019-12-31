@@ -74,11 +74,11 @@ def checkout(cart, coupons)
 
   total = 0
   i = 0
-  while i , final.length 
-    total += final[i][:price] * final[i][:count] 
-  end 
+  while i , final.length
+    total += final[i][:price] * final[i][:count]
+  end
   if total > 100
     total = total * 0.9
-  end 
+  end
   total 
 end
